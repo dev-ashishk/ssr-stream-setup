@@ -4,14 +4,19 @@
 
 ### Features/
 
-- Docker `(docker-engine >=v19.x)`
-- Express ` >= v4.x`
-- React ` >= v16.x`
-- Redux ` >= v4.x`
-- Loadable-components ` >= v5.x `
-- Webpack ` >= v4.x`
-- Babel ` >= v7.x`
-- SASS
+- [Docker](https://docs.docker.com/) `(docker-engine >=v19.x)`
+- [Express](https://expressjs.com/) ` >= v4.x`
+- [React](https://reactjs.org/) ` >= v16.x`
+- [Redux](https://redux.js.org/) ` >= v4.x`
+- [Loadable-components](https://loadable-components.com/) ` >= v5.x `
+- [Webpack](https://webpack.js.org/) ` >= v4.x`
+- [Babel](https://babeljs.io/) ` >= v7.x`
+- [SASS](https://sass-lang.com/)
+- [Circle-CI](https://circleci.com/) 
+- [Jest](https://jestjs.io/)
+- [Enzyme](https://enzymejs.github.io/enzyme/)
+- [PWA](https://web.dev/progressive-web-apps/)
+
 
 ### Prerequisite
 Before proceeding futher install following prerequisite dependencies to start:
@@ -39,3 +44,17 @@ or for Production
 npm run build && npm run serve
 ```
 > open <http://localhost:3000> in browser.
+
+### Create Docker image
+
+``` 
+npm run docker -- -c build 
+```
+OR use the script in `./tools/build.sh`
+
+### Deploy Docker containers
+
+```
+npm run docker -- -c deploy
+```
+Or use the script in `./tools/deploy.sh`
