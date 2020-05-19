@@ -41,7 +41,7 @@ npm run dev
 ```
 or for Production
 ```
-npm run build && npm run serve
+npm run build && npm run start
 ```
 > open <http://localhost:3000> in browser.
 
