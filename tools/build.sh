@@ -21,4 +21,4 @@ echo "[INFO] For more info visit https://docs.docker.com/compose/reference/build
 
 # running build process by passing ENV_ARGS as arguments
 # # --no-cache https://docs.docker.com/compose/reference/build
-# eval $ENV_ARGS docker-compose build --no-cache
+eval $ENV_ARGS docker-compose build --no-cache
